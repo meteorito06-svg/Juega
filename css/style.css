@@ -576,3 +576,61 @@ footer {
   background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
   border-left: 5px solid #fdcb6e;
 }
+/* RESPONSIVE MÓVIL - PERFECTO */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column !important;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  main {
+    padding: 0 15px !important;
+    margin: 1rem auto !important;
+  }
+  
+  .hero, .hero-big {
+    padding: 2rem 1rem !important;
+    margin: 1rem !important;
+  }
+  
+  .hero h1, .hero-big h1 {
+    font-size: 2rem !important;
+  }
+  
+  .hero h2, .hero-big h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .riesgos-grid, .actions-grid, .definiciones-grid, .motivacion {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  #test-section {
+    padding: 1.5rem !important;
+  }
+  
+  .test-question {
+    padding: 1rem !important;
+    margin: 0.5rem 0 !important;
+  }
+  
+  button.btn {
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
+  
+  .consejos-list, .warning-list {
+    padding: 1.5rem !important;
+  }
+  
+  footer {
+    padding: 1.5rem !important;
+  }
+}
+
