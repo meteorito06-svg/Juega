@@ -3,31 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juega con Cabeza - Inicio</title>
-  <style>
-    /* CSS INTEGRADO */
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-    body { background: #f0f2f5; color: #333; line-height: 1.6; }
-    
-    header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem; text-align: center; }
-    nav { display: flex; justify-content: center; gap: 15px; margin-top: 10px; flex-wrap: wrap; }
-    nav a { color: white; text-decoration: none; font-weight: bold; padding: 5px 10px; border-radius: 5px; }
-    nav a:hover { background: rgba(255,255,255,0.2); }
-
-    .hero-big { padding: 4rem 2rem; text-align: center; background: white; margin: 20px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-    .highlight { color: #667eea; font-weight: 900; }
-    .btn { display: inline-block; padding: 12px 25px; margin: 10px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; }
-    .btn-primary { background: #ff6b6b; color: white; }
-    .btn-secondary { background: #667eea; color: white; }
-
-    .stats-section, .actions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
-    .stat-card, .action-card { background: white; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-    
-    @media (max-width: 768px) {
-      .hero-big h1 { font-size: 1.8rem; }
-      nav { flex-direction: column; }
-    }
-  </style>
+  <title>Inicio - Juega con Cabeza</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -41,20 +18,82 @@
   </header>
 
   <main>
+    <!-- HERO IMPACTANTE -->
     <section class="hero-big">
-      <h1>🎯 Apuestas SÍ, <span class="highlight">PERO CON CABEZA</span></h1>
-      <p>El 80% de jóvenes apuesta más de lo planeado.</p>
-      <div class="hero-buttons">
-        <a href="consejos.html" class="btn btn-primary">✅ 10 Consejos</a>
-        <a href="riesgos.html" class="btn btn-secondary">⚠️ Ver Riesgos</a>
+      <div class="hero-content">
+        <h1>🎯 Apuestas SÍ, <span class="highlight">PERO CON CABEZA</span></h1>
+        <p class="hero-subtitle">El <strong>80% de jóvenes</strong> reconoce haber apostado más de lo planeado</p>
+        <div class="hero-buttons">
+          <a href="consejos.html" class="btn btn-primary">✅ 10 Consejos Clave</a>
+          <a href="riesgos.html" class="btn btn-secondary">⚠️ Ver Riesgos</a>
+        </div>
       </div>
     </section>
 
+    <!-- STATS IMPACTANTES -->
     <section class="stats-section">
-      <div class="stat-card"><h3>💰 Deudas</h3><p>2.500€ de media</p></div>
-      <div class="stat-card"><h3>⏰ Tiempo</h3><p>3h 45m diarios</p></div>
-      <div class="stat-card"><h3>📱 Inicio</h3><p>16 años</p></div>
+      <div class="stat-card">
+        <div class="stat-icon">💰</div>
+        <h3>Deudas medias</h3>
+        <p><strong>2.500€</strong> por jugador problema</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">⏰</div>
+        <h3>Tiempo medio diario</h3>
+        <p><strong>3h 45m</strong> en apuestas</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📱</div>
+        <h3>Edad media inicio</h3>
+        <p><strong>16 años</strong></p>
+      </div>
+    </section>
+
+    <!-- QUICK ACTIONS -->
+    <section class="quick-actions">
+      <h2>🚀 ¿Qué quieres hacer ahora?</h2>
+      <div class="actions-grid">
+        <div class="action-card">
+          <div class="action-icon">🧪</div>
+          <h3>Haz el Test</h3>
+          <p>Evalúa tus hábitos en 30 segundos</p>
+          <a href="consejos.html#test-section" class="btn btn-small">Empezar Test</a>
+        </div>
+        <div class="action-card">
+          <div class="action-icon">✅</div>
+          <h3>10 Consejos</h3>
+          <p>Reglas de oro para jugar bien</p>
+          <a href="consejos.html" class="btn btn-small">Ver Consejos</a>
+        </div>
+        <div class="action-card">
+          <div class="action-icon">🆘</div>
+          <h3>Pedir Ayuda</h3>
+          <p>Recursos oficiales GRATIS</p>
+          <a href="sobre.html" class="btn btn-small">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEFINICIONES CLARAS -->
+    <section class="definiciones">
+      <h2>🎓 ¿Qué significa?</h2>
+      <div class="definiciones-grid">
+        <div class="definicion">
+          <h3>🛡️ Juego Seguro</h3>
+          <p>Apostar en webs <strong>con licencia DGOJ</strong>, datos protegidos y menores bloqueados</p>
+        </div>
+        <div class="definicion">
+          <h3>🧠 Juego Responsable</h3>
+          <p>Tratar las apuestas como <strong>ocio</strong>, no como forma de ganar dinero</p>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer>
+    <p>💡 Proyecto Final de Mario Garrido - 2º SMR</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
